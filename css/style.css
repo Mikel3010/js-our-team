@@ -22,3 +22,46 @@ h1{
     display: flex;
     flex-direction: column;
 }
+.card0 p,.card1 p,.card2 p,.card3 p,.card4 p,.card5 p{
+    display: flex;
+}
+.card0 .img0,.card1 .img1,.card2 .img2,.card3 .img3,.card4 .img4,.card5 .img5{
+    order: -1;
+}
+
+.img0{
+    background-image: url(../img/wayne-barnett-founder-ceo.jpg);
+    width: 300px;
+    height: 300px;
+   background-size: 100%;
+}
+.img1{
+    background-image: url(../img/angela-caroll-chief-editor.jpg);
+    width: 300px;
+    height: 300px;
+   background-size: 100%;
+}
+.img2{
+    background-image: url(../img/walter-gordon-office-manager.jpg);
+    width: 300px;
+    height: 300px;
+   background-size: 100%;
+}
+.img3{
+    background-image: url(../img/angela-lopez-social-media-manager.jpg);
+    width: 300px;
+    height: 300px;
+   background-size: 100%;
+}
+.img4{
+    background-image: url(../img/scott-estrada-developer.jpg);
+    width: 300px;
+    height: 300px;
+   background-size: 100%;
+}
+.img5{
+    background-image: url(../img/barbara-ramos-graphic-designer.jpg);
+    width: 300px;
+    height: 300px;
+   background-size: 100%;
+}

@@ -11,7 +11,6 @@ function createElement (index){
     paraRole.innerHTML = team[index].ruolo;
     document.querySelector(".card"+[index]).appendChild(paraRole);
     const paraImg = document.createElement("p");
-    paraImg.innerHTML = team[index].foto;
     paraImg.classList.add('img'+[index])
     document.querySelector(".card"+[index]).appendChild(paraImg);
 }
