@@ -1,5 +1,21 @@
 'use strict'
 
+function createElement (index){
+    const containerCard = document.createElement('div');
+    document.getElementById('container').appendChild(containerCard)
+    containerCard.classList.add('card'+[index])
+    const paraName = document.createElement("p");
+    paraName.innerHTML = team[index].nome;
+    document.querySelector(".card"+[index]).appendChild(paraName);
+    const paraRole = document.createElement("p");
+    paraRole.innerHTML = team[index].ruolo;
+    document.querySelector(".card"+[index]).appendChild(paraRole);
+    const paraImg = document.createElement("p");
+    paraImg.innerHTML = team[index].foto;
+    paraImg.classList.add('img'+[index])
+    document.querySelector(".card"+[index]).appendChild(paraImg);
+}
+
 const team = [
     {
         'nome': 'Wayne Barnett',
@@ -34,5 +50,6 @@ const team = [
     
 ]
 for(let i = 0; i < team.length; i++){
+    createElement(i)
     console.log(team[i])
 }
